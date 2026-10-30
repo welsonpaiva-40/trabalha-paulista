@@ -1,0 +1,51 @@
+/* Site footer */
+
+.site-footer {
+  padding-top: 30px;
+  background: white;
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 30px;
+  padding-bottom: 28px;
+}
+
+.footer-brand .brand img {
+  width: 175px;
+  height: 60px;
+}
+
+.footer-brand p {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.footer-main h3 {
+  margin: 5px 0 10px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0;
+}
+
+.footer-main > div:not(.footer-brand) a {
+  display: block;
+  margin: 6px 0;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.footer-main > div:not(.footer-brand) a:hover {
+  color: var(--green);
+}
+
+.footer-legal {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-bottom: 14px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 9px;
+}

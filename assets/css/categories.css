@@ -1,0 +1,55 @@
+/* Opportunity categories */
+
+.path-section {
+  padding: 34px 0 40px;
+  background: var(--green-soft);
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.category-card {
+  position: relative;
+  min-height: 104px;
+  padding: 15px 16px;
+  border: 1px solid #e8eee4;
+  border-radius: 12px;
+  background: white;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.category-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 18px #173a2410;
+}
+
+.category-card > span {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--green);
+  font-size: 19px;
+}
+
+.category-card b, .category-card small {
+  display: block;
+}
+
+.category-card b {
+  font-size: 12px;
+}
+
+.category-card small {
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.category-card i {
+  position: absolute;
+  right: 14px;
+  top: 13px;
+  color: var(--green);
+  font-style: normal;
+}

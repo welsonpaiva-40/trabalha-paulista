@@ -1,0 +1,136 @@
+/* Job listings */
+
+.jobs-section {
+  padding-top: 52px;
+  padding-bottom: 50px;
+}
+
+.filter-row {
+  display: flex;
+  gap: 8px;
+  margin: 20px 0 16px;
+  overflow-x: auto;
+}
+
+.filter-chip {
+  flex: 0 0 auto;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 7px 14px;
+  background: white;
+  color: var(--text);
+  font-size: 10px;
+}
+
+.filter-chip.is-active, .filter-chip:hover {
+  background: var(--green);
+  border-color: var(--green);
+  color: white;
+}
+
+.job-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.job-card {
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: white;
+  transition: box-shadow .2s, transform .2s;
+}
+
+.job-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px #18322212;
+}
+
+.job-card[hidden] {
+  display: none;
+}
+
+.job-company {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 13px;
+  font-size: 11px;
+}
+
+.job-company small {
+  display: block;
+  color: var(--muted);
+  font-size: 9px;
+}
+
+.company-mark {
+  display: grid;
+  place-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 9px;
+  background: #eef4ed;
+  color: var(--green);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.save-job {
+  margin-left: auto;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.save-job.is-saved {
+  color: var(--green);
+}
+
+.job-card h3 {
+  margin-bottom: 5px;
+  font-size: 15px;
+  letter-spacing: -.02em;
+}
+
+.job-location {
+  color: var(--muted);
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.tags {
+  display: flex;
+  gap: 6px;
+}
+
+.tags span {
+  padding: 3px 7px;
+  border-radius: 3px;
+  background: #edf3eb;
+  color: var(--green);
+  font-size: 9px;
+}
+
+.job-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 13px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+  font-size: 10px;
+}
+
+.job-bottom a {
+  color: var(--green);
+  font-size: 17px;
+}
+
+.data-note {
+  color: var(--muted);
+  font-size: 10px;
+  margin: 15px 0 0;
+}
